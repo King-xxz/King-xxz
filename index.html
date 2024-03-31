@@ -8,7 +8,7 @@
     <meta name="description" content="xxz的blog" />
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="icon" href="/King-xxz/king-xxz.github.io/images/avatar.jpg" />
+    <link rel="icon" href="/images/avatar.jpg" />
     <link rel="preconnect" href="https://s4.zstatic.net" />
 <script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -26,19 +26,19 @@
     rel="stylesheet"
     href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
 />
-<script src="/King-xxz/king-xxz.github.io/js/lib/highlight.js"></script>
+<script src="/js/lib/highlight.js"></script>
 
 
 
-<script src="/King-xxz/king-xxz.github.io/js/lib/preview.js"></script>
+<script src="/js/lib/preview.js"></script>
 
 
 
 
 
-<script src="/King-xxz/king-xxz.github.io/js/lib/home.js"></script>
+<script src="/js/lib/home.js"></script>
 
-<link rel="stylesheet" href="/King-xxz/king-xxz.github.io/css/main.css" />
+<link rel="stylesheet" href="/css/main.css" />
 
 <meta name="generator" content="Hexo 7.1.1"></head>
 <body>
@@ -48,37 +48,37 @@
                 <div id="loading-circle">
                     <h2>LOADING</h2>
                     <p>加载过慢请开启缓存 浏览器默认开启</p>
-                    <img src="/King-xxz/king-xxz.github.io/images/loading.gif" />
+                    <img src="/images/loading.gif" />
                 </div>
             </div>
         </transition>
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
-        <a class="title" href="/King-xxz/king-xxz.github.io/">
+        <a class="title" href="/">
             <span>XXZ</span>
         </a>
         
-        <a href="/King-xxz/king-xxz.github.io/">
+        <a href="/">
             <i class="fa-solid fa-house fa-fw"></i>
             <span>&ensp;Home</span>
         </a>
         
-        <a href="/King-xxz/king-xxz.github.io/about">
+        <a href="/about">
             <i class="fa-solid fa-id-card fa-fw"></i>
             <span>&ensp;About</span>
         </a>
         
-        <a href="/King-xxz/king-xxz.github.io/archives">
+        <a href="/archives">
             <i class="fa-solid fa-box-archive fa-fw"></i>
             <span>&ensp;Archives</span>
         </a>
         
-        <a href="/King-xxz/king-xxz.github.io/categories">
+        <a href="/categories">
             <i class="fa-solid fa-bookmark fa-fw"></i>
             <span>&ensp;Categories</span>
         </a>
         
-        <a href="/King-xxz/king-xxz.github.io/tags">
+        <a href="/tags">
             <i class="fa-solid fa-tags fa-fw"></i>
             <span>&ensp;Tags</span>
         </a>
@@ -92,7 +92,7 @@
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
                 
-                <a href="/King-xxz/king-xxz.github.io/">
+                <a href="/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-house fa-fw"></i>
@@ -101,7 +101,7 @@
                     </div>
                 </a>
                 
-                <a href="/King-xxz/king-xxz.github.io/about">
+                <a href="/about">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-id-card fa-fw"></i>
@@ -110,7 +110,7 @@
                     </div>
                 </a>
                 
-                <a href="/King-xxz/king-xxz.github.io/archives">
+                <a href="/archives">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-box-archive fa-fw"></i>
@@ -119,7 +119,7 @@
                     </div>
                 </a>
                 
-                <a href="/King-xxz/king-xxz.github.io/categories">
+                <a href="/categories">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-bookmark fa-fw"></i>
@@ -128,7 +128,7 @@
                     </div>
                 </a>
                 
-                <a href="/King-xxz/king-xxz.github.io/tags">
+                <a href="/tags">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-tags fa-fw"></i>
@@ -147,7 +147,7 @@
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/King-xxz/king-xxz.github.io/images/background.jpg"></div>
+    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
@@ -167,7 +167,7 @@
         
 
 <div class="post">
-    <a href="/King-xxz/king-xxz.github.io/2024/03/25/mysql/">
+    <a href="/2024/03/25/mysql/">
         <h2 class="post-title">mysql</h2>
     </a>
     <div class="category-and-date">
@@ -319,7 +319,7 @@ insert into 表名 values(值1，值2,....),(值1,值2,...),(值1,值2,...);
         
         
     </div>
-    <a href="/King-xxz/king-xxz.github.io/2024/03/25/mysql/" class="go-post">阅读全文</a>
+    <a href="/2024/03/25/mysql/" class="go-post">阅读全文</a>
 </div>
 
 
@@ -338,7 +338,7 @@ insert into 表名 values(值1，值2,....),(值1,值2,...),(值1,值2,...);
         <div id="card-style">
     <div id="card-div">
         <div class="avatar">
-            <img src="/King-xxz/king-xxz.github.io/images/avatar.jpg" alt="avatar" />
+            <img src="/images/avatar.jpg" alt="avatar" />
         </div>
         <div class="name">xxz</div>
         <div class="description">
@@ -374,7 +374,7 @@ insert into 表名 values(值1，值2,....),(值1,值2,...),(值1,值2,...);
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
-            <a href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
         </div>
         
     </div>
@@ -389,7 +389,7 @@ insert into 表名 values(值1，值2,....),(值1,值2,...),(值1,值2,...);
         </transition>
         
     </div>
-    <script src="/King-xxz/king-xxz.github.io/js/main.js"></script>
+    <script src="/js/main.js"></script>
     
 </body>
 </html>

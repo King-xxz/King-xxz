@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | xxz</title>
+    <title>Categories: 分类2 | xxz</title>
     <meta name="author" content="xxz" />
     <meta name="description" content="xxz的blog" />
     <meta name="keywords" content="" />
@@ -144,49 +144,60 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
+            <div id="archives">
     
-    <div id="timeline-wrap" ref="timeline">
+    <div class="categories-tags">
         
-        <div class="timeline" data-title="mysql">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/3/25</div>
-                <a href="/2024/03/25/mysql/">
-                    <h3>mysql</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
         
-        <div class="timeline" data-title="第一实战-英雄联盟">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/4/6</div>
-                <a href="/2024/04/06/lol/">
-                    <h3>第一实战-英雄联盟</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/%E5%88%86%E7%B1%BB1/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            分类1
-                        </a>
-                    </span>
-                    
-                    
-                </div>
-            </div>
-        </div>
+        
+        <span>
+            <a href="/categories/%E5%88%86%E7%B1%BB1/" style="background: #ff7d73">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                分类1
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/categories/%E5%88%86%E7%B1%BB1/%E5%88%86%E7%B1%BB2/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                分类2
+            </a>
+        </span>
+        
+        
+        
         
     </div>
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2024/4/6</div>
+            <a href="/2024/04/06/lol/">
+                <h3>第一实战-英雄联盟</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/%E5%88%86%E7%B1%BB1/">
+                        <span class="icon">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </span>
+                        分类1
+                    </a>
+                </span>
+                
+                
+            </div>
+        </div>
+    </div>
+    
 </div>
 
             <footer id="footer">

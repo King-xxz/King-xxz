@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>xxz</title>
+    <title>第一实战-英雄联盟 | xxz</title>
     <meta name="author" content="xxz" />
     <meta name="description" content="xxz的blog" />
     <meta name="keywords" content="" />
@@ -36,7 +36,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -146,31 +148,17 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>xxz</h1>
-                <h3></h3>
-                <h5>xxz的blog</h5>
-            </div>
-        </span>
+            <div class="article">
+    <div>
+        <h1>第一实战-英雄联盟</h1>
     </div>
-</div>
-<div id="home-posts-wrap" true ref="homePostsWrap">
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2024/04/06/lol/">
-        <h2 class="post-title">第一实战-英雄联盟</h2>
-    </a>
-    <div class="category-and-date">
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/4/6
+        </span>
         
         <span class="category">
             <a href="/categories/%E5%88%86%E7%B1%BB1/">
@@ -181,19 +169,11 @@
             </a>
         </span>
         
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/4/6
-        </span>
-        
         
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <blockquote>
+    
+    <div class="content" v-pre>
+        <blockquote>
 <p>记录我们团队的第一个比赛项目：第一实战——英雄联盟官网</p>
 </blockquote>
 <h2 id="1-项目说明"><a href="#1-项目说明" class="headerlink" title="1.项目说明"></a>1.项目说明</h2><ul>
@@ -625,210 +605,13 @@
 </code></pre>
 <hr>
 
-            
-        </div>
     </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/04/06/lol/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/03/25/mysql/">
-        <h2 class="post-title">mysql</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/3/25
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <span id="more"></span>
-<h1 id="mysql指令"><a href="#mysql指令" class="headerlink" title="mysql指令"></a>mysql指令</h1><hr>
-<h2 id="mysql的打开与停止"><a href="#mysql的打开与停止" class="headerlink" title="mysql的打开与停止"></a>mysql的打开与停止</h2><h3 id="mysql的打开："><a href="#mysql的打开：" class="headerlink" title="mysql的打开："></a>mysql的打开：</h3><pre><code>net start mysql80
-</code></pre>
-<h3 id="mysql的停止："><a href="#mysql的停止：" class="headerlink" title="mysql的停止："></a>mysql的停止：</h3><pre><code>net stop mysql80
-</code></pre>
-<h3 id="mysql客户端的链接："><a href="#mysql客户端的链接：" class="headerlink" title="mysql客户端的链接："></a>mysql客户端的链接：</h3><pre><code>mysql [-h 127.0.0.1] [-p 3306] -u root -p
-</code></pre>
-<h2 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h2><h3 id="SQL通用语法"><a href="#SQL通用语法" class="headerlink" title="SQL通用语法"></a>SQL通用语法</h3><ol>
-<li>SQL语句可以单行或者多行书写，以分号结尾</li>
-<li>SQL语句可以使用空格&#x2F;缩进来增强语句的可读性</li>
-<li>MySQL数据库的SQL语句不区分大小写，关键词建议用大写</li>
-<li>注释：<ul>
-<li>单行注释：–注释内容 或者 #注释内容</li>
-<li>多行注释： &#x2F;* 注释内容 *&#x2F;</li>
-</ul>
-</li>
-</ol>
-<h3 id="SQL分类"><a href="#SQL分类" class="headerlink" title="SQL分类"></a>SQL分类</h3><ol>
-<li>DDL：数据定义语言，用于定义数据库对象（数据库，表，字段）</li>
-<li>DML：数据操作语言，用于对数据库表中的数据进行增删该</li>
-<li>DQL：数据查询语言，用于查询数据库中表的结构</li>
-<li>DCL：数据控制语言，用于创建数据库用书，控制数据库的访问权限</li>
-</ol>
-<h3 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h3><h4 id="库操作"><a href="#库操作" class="headerlink" title="库操作"></a>库操作</h4><p>查询所有数据库：</p>
-<pre><code>show databases;
-</code></pre>
-<p>查询当前数据库：</p>
-<pre><code>select database();
-</code></pre>
-<p>创建：</p>
-<pre><code>create database [if not exists] 数据库名 [default charset 字符集] [collate 排序规则];
-</code></pre>
-<p>删除：</p>
-<pre><code>c [if exists]数据库名；
-</code></pre>
-<p>使用：</p>
-<pre><code>use 数据库名；
-</code></pre>
-<h4 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h4><h5 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h5><p>查询当前数据库所有表:</p>
-<pre><code>show tables;
-</code></pre>
-<p>查询表结构:</p>
-<pre><code>desc 表名;
-</code></pre>
-<p>查询指定表的建表语句：</p>
-<pre><code>show create table 表名;
-</code></pre>
-<h5 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h5><pre><code>create table 表名(
-    字段1 字段1类型[comment 字段1注释],
-    字段2 字段2类型[comment 字段2注释],
-    字段3 字段3类型[comment 字段3注释],
-    ......
-    字段n 字段n类型[comment 字段n注释]
-)[comment 表注释];
-</code></pre>
-<h5 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h5><p>案例：在itheima库中创建tb_user的表，包含id，name，age,gender,并查询该表结构。</p>
-<pre><code>create datebase itheima;
-use itheima;
-create table tb_user(
-    id int comment &#39;编号&#39;,
-    name varchar(50) comment &#39;姓名&#39;,
-    age int comment &#39;年龄&#39;,
-    gender varchar(1) comment &#39;性别&#39;
-)comment &#39;用户表&#39;;
-desc tb_user;
-</code></pre>
-<h5 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h5><p>添加字段</p>
-<pre><code>alter table 表名 add 字段名 类型（长度） [comment 注释];
-</code></pre>
-<p>案例：为emp表添加一个新的字段“昵称”为nickname，类型为varchar（20）</p>
-<pre><code>desc cmp;
-alter table emp add nickname varchar(20) comment &quot;昵称&quot;;
-</code></pre>
-<p>修改数据类型</p>
-<pre><code>alter table 表名 modify 字段名 新数据类型；
-</code></pre>
-<p>修改字段名和字段类型</p>
-<pre><code>alter table 表名 change 旧字段名 新字段名 数据类型 [comment 注释];
-</code></pre>
-<p>案例：将emp中的nickname改为username，类型为varchar(30)</p>
-<pre><code>alter table emp change nickname username varchar(30) comment &quot;昵称&quot;;
-</code></pre>
-<p>删除字段</p>
-<pre><code>alter 表名 drop 字段名;
-</code></pre>
-<p>案例：将emp表中的username删除</p>
-<pre><code>alter emp drop username;
-</code></pre>
-<p>修改表名:</p>
-<pre><code>alter table 表名 rename to 新表名;
-</code></pre>
-<p>案例：将emp表名该为employee</p>
-<pre><code>alter username rename to employee;
-</code></pre>
-<p>删除表:</p>
-<pre><code>drop table [if exists] 表名;
-</code></pre>
-<p>删除指定表，并重新建立该表：</p>
-<pre><code>    truncate table 表名;
-</code></pre>
-<p>案例：将表tb_user删除</p>
-<pre><code>drop table if exists tb_user;
-</code></pre>
-<h3 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h3><h4 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h4><h5 id="给指定字段添加数据："><a href="#给指定字段添加数据：" class="headerlink" title="给指定字段添加数据："></a>给指定字段添加数据：</h5><pre><code>insert into 表名(字段名1，字段名2，...)values(值1，值2);
-</code></pre>
-<p>案例：</p>
-<pre><code>insert into employee(id, workno, name, gender, age, idcard, entrydate) values(&quot;1&quot;,&quot;1&quot;,&quot;黑马&quot;,&quot;男&quot;,18,&quot;123456789012345671&quot;,&quot;2024-3-28&quot;);
-</code></pre>
-<h5 id="给指定字段添加数据：-1"><a href="#给指定字段添加数据：-1" class="headerlink" title="给指定字段添加数据："></a>给指定字段添加数据：</h5><pre><code>insert into 表名 values(值1，值2);
-</code></pre>
-<p>案例：</p>
-<pre><code>insert into employee values (2,&quot;2&quot;,&quot;马黑&quot;,&quot;女&quot;,81,&quot;012345678901234562&quot;,&quot;2024-3-28&quot;);
-</code></pre>
-<h5 id="批量添加数据"><a href="#批量添加数据" class="headerlink" title="批量添加数据"></a>批量添加数据</h5><pre><code>insert into 表名(字段名1，字段名2,...) values(值1，值2，...),(值1，值2,....),(值1，值2，...);
-
-insert into 表名 values(值1，值2,....),(值1,值2,...),(值1,值2,...); 
-</code></pre>
-<p>案例：</p>
-<pre><code>insert into employee values (3,&quot;3&quot;,&quot;小黑马&quot;,&quot;男&quot;,8,&quot;012345678901234563&quot;,&quot;2024-3-28&quot;),(4,&quot;4&quot;,&quot;中黑马&quot;,&quot;男&quot;,18,&quot;012345678901234564&quot;,&quot;2024-3-28&quot;);
-</code></pre>
-<h4 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h4><pre><code>update 表名 set 字段1=值1,字段2=值2,....[where 条件];
-</code></pre>
-<p>案例：将编号为1的name修改城itheima：</p>
-<pre><code>update employee set name=&quot;itheima&quot; where id=1;
-</code></pre>
-<h3 id="DQL"><a href="#DQL" class="headerlink" title="DQL"></a>DQL</h3><h3 id="DCL"><a href="#DCL" class="headerlink" title="DCL"></a>DCL</h3>
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/03/25/mysql/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
     
-    <span class="current">1</span>
     
     
     
     
-</div>
-
-    </div>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">xxz</div>
-        <div class="description">
-            <p>Description<br>…</p>
-
-        </div>
-        
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
-            </div>
-            
-        </div>
-        
-    </div>
-</div>
-
-    </div>
     
 </div>
 
@@ -860,6 +643,12 @@ insert into 表名 values(值1，值2,....),(值1,值2,...),(值1,值2,...);
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>

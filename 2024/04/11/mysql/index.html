@@ -157,21 +157,35 @@
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2024/3/25
+            2024/4/11
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                学习
+            </a>
         </span>
         
         
     </div>
     
     <div class="content" v-pre>
-        <span id="more"></span>
-<h1 id="mysql指令"><a href="#mysql指令" class="headerlink" title="mysql指令"></a>mysql指令</h1><hr>
+        <blockquote>
+<p>本篇文章记录了我在b站黑马程序员的MySQL学习笔记</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="mysql指令"><a href="#mysql指令" class="headerlink" title="mysql指令"></a>mysql指令</h1><p><a name="mysql的打开与停止"></a></p>
 <h2 id="mysql的打开与停止"><a href="#mysql的打开与停止" class="headerlink" title="mysql的打开与停止"></a>mysql的打开与停止</h2><h3 id="mysql的打开："><a href="#mysql的打开：" class="headerlink" title="mysql的打开："></a>mysql的打开：</h3><pre><code>net start mysql80
 </code></pre>
 <h3 id="mysql的停止："><a href="#mysql的停止：" class="headerlink" title="mysql的停止："></a>mysql的停止：</h3><pre><code>net stop mysql80
 </code></pre>
 <h3 id="mysql客户端的链接："><a href="#mysql客户端的链接：" class="headerlink" title="mysql客户端的链接："></a>mysql客户端的链接：</h3><pre><code>mysql [-h 127.0.0.1] [-p 3306] -u root -p
 </code></pre>
+<p><a name="SQL四种语言"></a></p>
 <h2 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h2><h3 id="SQL通用语法"><a href="#SQL通用语法" class="headerlink" title="SQL通用语法"></a>SQL通用语法</h3><ol>
 <li>SQL语句可以单行或者多行书写，以分号结尾</li>
 <li>SQL语句可以使用空格&#x2F;缩进来增强语句的可读性</li>
@@ -188,6 +202,7 @@
 <li>DQL：数据查询语言，用于查询数据库中表的结构</li>
 <li>DCL：数据控制语言，用于创建数据库用书，控制数据库的访问权限</li>
 </ol>
+<p><a name="DDL"></a></p>
 <h3 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h3><h4 id="库操作"><a href="#库操作" class="headerlink" title="库操作"></a>库操作</h4><p>查询所有数据库：</p>
 <pre><code>show databases;
 </code></pre>
@@ -198,7 +213,7 @@
 <pre><code>create database [if not exists] 数据库名 [default charset 字符集] [collate 排序规则];
 </code></pre>
 <p>删除：</p>
-<pre><code>c [if exists]数据库名；
+<pre><code>drop [if exists]数据库名；
 </code></pre>
 <p>使用：</p>
 <pre><code>use 数据库名；
@@ -268,6 +283,7 @@ alter table emp add nickname varchar(20) comment &quot;昵称&quot;;
 <p>案例：将表tb_user删除</p>
 <pre><code>drop table if exists tb_user;
 </code></pre>
+<p><a name="DML"></a></p>
 <h3 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h3><h4 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h4><h5 id="给指定字段添加数据："><a href="#给指定字段添加数据：" class="headerlink" title="给指定字段添加数据："></a>给指定字段添加数据：</h5><pre><code>insert into 表名(字段名1，字段名2，...)values(值1，值2);
 </code></pre>
 <p>案例：</p>
@@ -290,7 +306,104 @@ insert into 表名 values(值1，值2,....),(值1,值2,...),(值1,值2,...);
 <p>案例：将编号为1的name修改城itheima：</p>
 <pre><code>update employee set name=&quot;itheima&quot; where id=1;
 </code></pre>
-<h3 id="DQL"><a href="#DQL" class="headerlink" title="DQL"></a>DQL</h3><h3 id="DCL"><a href="#DCL" class="headerlink" title="DCL"></a>DCL</h3>
+<p><a name=DQL></a></p>
+<h3 id="DQL"><a href="#DQL" class="headerlink" title="DQL"></a>DQL</h3><h4 id="DQL简述"><a href="#DQL简述" class="headerlink" title="DQL简述"></a>DQL简述</h4><p>DQL是数据查询语言，主要就是用来查询表内结构。<br>我们可以把DQL的查询分为：</p>
+<ul>
+<li>基本查询</li>
+<li>条件查询</li>
+<li>聚合查询</li>
+<li>分组查询</li>
+<li>排序查询</li>
+<li>分页查询</li>
+</ul>
+<p>DQL的书写顺序如下：</p>
+<pre><code>select
+        字段列表
+from
+        表名列表
+where
+        条件列表
+group by
+        分组字段列表
+having
+        分组后条件列表
+order by
+        排序字段列表
+limit
+        分页参数
+</code></pre>
+<h5 id="基本查询"><a href="#基本查询" class="headerlink" title="基本查询"></a>基本查询</h5><p>1.查询多个字段</p>
+<pre><code>select 字段1,字段2,字段3...from 表名;
+select * from 表名;
+</code></pre>
+<p>2.设置别名</p>
+<pre><code>select 字段1[as 别名1],字段2[as 别名2]...from 表名;
+</code></pre>
+<p>3.去除重复部分</p>
+<pre><code>select distinct 字段列表 from 表名;
+</code></pre>
+<h5 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h5><p>1.语法</p>
+<pre><code>select 字段列表 from 表名 where 条件列表;
+</code></pre>
+<p>2.条件<br><img src="../MySQL/SQL-DQL/条件查询.png"></p>
+<h5 id="聚合查询"><a href="#聚合查询" class="headerlink" title="聚合查询"></a>聚合查询</h5><p>1.介绍<br>将一列数据作为一共整体，并且纵向计算<br>2.常见聚合函数</p>
+<ul>
+<li><p>count :统计数量</p>
+</li>
+<li><p>max :最大值</p>
+</li>
+<li><p>min :最小值</p>
+</li>
+<li><p>avg :平均值</p>
+</li>
+<li><p>sum ：求和<br>3.语法</p>
+<p>  select 聚合函数(字段列表) from 表名；</p>
+</li>
+</ul>
+<h5 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h5><p>1.语法</p>
+<pre><code>select 字段列表 from [where 条件] group by 分组字段名 [having 分组后过滤条件];
+</code></pre>
+<p>2.where与having区别</p>
+<ul>
+<li>执行时机不同：where是分组之前进行过滤，不满足where条件，不参与分组；而having是分组之后对结果进行过滤；</li>
+<li>判断条件不同：where不能对聚合函数进行判断，而having可以。</li>
+</ul>
+<h5 id="排序查询"><a href="#排序查询" class="headerlink" title="排序查询"></a>排序查询</h5><p>1.语法</p>
+<pre><code>select 字段列表 from 表名 order by 字段1 排序方式1,字段2 排序方式2;
+</code></pre>
+<p>2.排序方式</p>
+<ul>
+<li>asc：升序（默认值）</li>
+<li>desc：降序<br>注意：如果是多字段排序，当第一个字段值相同时，才会根据第二个字段进行排序</li>
+</ul>
+<h5 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h5><p>1.语法</p>
+<pre><code>select 字段列表 表名 limit 起始索引,查询记录数;
+</code></pre>
+<p>2.注意</p>
+<ul>
+<li>起始索引从0开始，起始索引&#x3D;(查询页码-1)*每页显示记录数;</li>
+<li>分页查询是数据库的方言，不同的数据库有不同的实现，MySQL中式limit;</li>
+<li>如果查询的是第一页数据，起始索引可以省略，之间简写为limit 10。</li>
+</ul>
+<h3 id="DCL"><a href="#DCL" class="headerlink" title="DCL"></a>DCL</h3><h4 id="DCL简述"><a href="#DCL简述" class="headerlink" title="DCL简述"></a>DCL简述</h4><h5 id="管理用户"><a href="#管理用户" class="headerlink" title="管理用户"></a>管理用户</h5><p>1.查询用户</p>
+<pre><code>use mysql;
+select * from user;
+</code></pre>
+<p>2.创建用户</p>
+<pre><code>create use &#39;用户名&#39;@&#39;主机名&#39; identified by &#39;密码&#39;;
+</code></pre>
+<p>3.修改用户密码</p>
+<pre><code>alter user &#39;用户名&#39;@&#39;主机名&#39; identified with mysql_native_password by &#39;新密码&#39;;
+</code></pre>
+<p>4.删除用户</p>
+<pre><code>drop user &#39;用户名&#39;@&#39;主机名&#39;;
+</code></pre>
+<p>5.注意</p>
+<ul>
+<li>主机名可以使用%通配；</li>
+<li>这类SQL开发人员操作的比较少，了解即可</li>
+</ul>
+<h5 id="权限控制"><a href="#权限控制" class="headerlink" title="权限控制"></a>权限控制</h5>
     </div>
     
     

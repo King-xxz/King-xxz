@@ -167,17 +167,58 @@
         
 
 <div class="post">
+    <a href="/2024/04/11/mysql/">
+        <h2 class="post-title">mysql</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                学习
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/4/11
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <blockquote>
+<p>本篇文章记录了我在b站黑马程序员的MySQL学习笔记</p>
+</blockquote>
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        
+        
+    </div>
+    <a href="/2024/04/11/mysql/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
     <a href="/2024/04/06/lol/">
         <h2 class="post-title">第一实战-英雄联盟</h2>
     </a>
     <div class="category-and-date">
         
         <span class="category">
-            <a href="/categories/%E5%88%86%E7%B1%BB1/">
+            <a href="/categories/%E6%AF%94%E8%B5%9B/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                分类1
+                比赛
             </a>
         </span>
         
@@ -196,435 +237,6 @@
             <blockquote>
 <p>记录我们团队的第一个比赛项目：第一实战——英雄联盟官网</p>
 </blockquote>
-<h2 id="1-项目说明"><a href="#1-项目说明" class="headerlink" title="1.项目说明"></a>1.项目说明</h2><ul>
-<li>项目名：第一实战-英雄联盟</li>
-<li>适应对象：学习前端不足一个月的初学者</li>
-<li>项目目标：激发初学者的热爱，坚定初学者的信心</li>
-<li>项目的产生<ul>
-<li>1.发现问题：有许多人对前端感兴趣，但学习一段时间后就放弃</li>
-<li>2.分析问题：最开始对前端感兴趣，表明前端确实很有意思，但前端学习过程中的语法过于枯燥，长期学习看不见结果，没有得到足够的正反馈，最终选择放弃。所以我们要选择一个项目，让初学者也能有成就感，并达到学后即便可以不断完善的效果。</li>
-<li>3.过程中的困难：我们选择了当下热门游戏英雄联盟的官网作为项目让初学者完成后有更大的正反馈与愉悦感。但英雄联盟官网构成复杂，初学者的知识储备远远达不到。</li>
-<li>4.我们如何解决困难：我们分析了在普通人眼中所看到这个英雄联盟官网主要是其页面表达效果。所以我们只把英雄联盟官网的页面表达效果拿出来，删除其后端等前期难以学习的构造，将重心放在如何用简单的语法构造英雄联盟官网的静态页面 以及如何分阶段拆解与完善，让最终的成品同普通人眼中的英雄联盟网站静态表达效果一样，当初学者与朋友分享时，得到足够的正反馈，激发学习兴趣。</li>
-</ul>
-</li>
-<li>项目的优势：<ul>
-<li>1.深厚的理论支持：顺应人脑的本质，知晓学生的喜爱，顺应社会快节奏的生活方式，“兴趣是最好的老师”极大加强初学者对前端的兴趣与自信。</li>
-<li>2.可完善性：英雄联盟官网并不是一次性的作品，随着不断的学习，我们可以把新学到的知识加到该作品上，令其不断完善，形成独属于自己的联盟官网。</li>
-</ul>
-</li>
-<li>6.项目总结第一实战一英雄联盟官网只是我们团队学习的开端，我们会不断记录我们在学习路上所遇到的困难，待我们学会后，我们会用当代青年最爱的方式去创造新的项目，输出我们的知识，因为热爱，所以编程</li>
-</ul>
-<hr>
-<h2 id="2-项目介绍"><a href="#2-项目介绍" class="headerlink" title="2.项目介绍"></a>2.项目介绍</h2><h3 id="1-图片与超链接"><a href="#1-图片与超链接" class="headerlink" title="1.图片与超链接"></a>1.图片与超链接</h3><p>在本步骤中，我们将会用img和a标签实现一个跳转的功能<br>     <!DOCTYPE html><br>      <html lang="en"></p>
-<pre><code>  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-      a &#123;
-        display: block;
-        text-align: center;
-        &#125;
-    &lt;/style&gt;
-  &lt;/head&gt;
-
-  &lt;body&gt;
-    &lt;a href=&quot;/img/lol/p1.webp&quot;
-      target=&quot;_blank&quot;&gt;链接&lt;/a&gt;
-  &lt;/body&gt;
-
-  &lt;/html&gt;
-</code></pre>
-<hr>
-<h3 id="2-英雄联盟框架解析及flex应用"><a href="#2-英雄联盟框架解析及flex应用" class="headerlink" title="2.英雄联盟框架解析及flex应用"></a>2.英雄联盟框架解析及flex应用</h3><p>在本步骤，我们将会采用flex框架把英雄联盟的官网抽象成一个个的块模型，方便我们了解一个页面的构造</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-  &lt;style&gt;
-    * &#123;
-      margin: 0;
-      padding: 0;
-    &#125;
-    .bg &#123;
-      width: 100%;
-      height: 500px;
-      background-color: pink;
-    &#125;
-    .head &#123;
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      height: 200px;
-      background: rgba(0, 0, 0, .3);
-    &#125;
-    .logo &#123;
-      width: 100px;
-      height: 80px;
-      background-color: yellow;
-    &#125;
-    .nav &#123;
-      display: flex;
-      justify-content: space-between;
-      width: 700px;
-      height: 80px;
-      background-color: skyblue;
-    &#125;
-    .nav span &#123;
-      width: 130px;
-      height: 80px;
-      background-color: red;
-    &#125;
-    .end &#123;
-      display: flex;
-      width: 300px;
-      height: 80px;
-      background-color: purple;
-    &#125;
-    .footer &#123;
-      display: flex;
-    &#125;
-    .footer &#123;
-      height: 300px;
-    &#125;
-    .left &#123;
-      background-color: orange;
-      flex: 1;
-    &#125;
-    .right &#123;
-      background-color: gold;
-      flex: 1;
-    &#125;
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class=&quot;bg&quot;&gt;
-    &lt;div class=&quot;head&quot;&gt;
-      &lt;div class=&quot;logo&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;nav&quot;&gt;
-        &lt;span&gt;1&lt;/span&gt;
-        &lt;span&gt;2&lt;/span&gt;
-        &lt;span&gt;3&lt;/span&gt;
-        &lt;span&gt;4&lt;/span&gt;
-        &lt;span&gt;5&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;end&quot;&gt;
-        &lt;div&gt;a&lt;/div&gt;
-        &lt;div&gt;b&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;footer&quot;&gt;
-    &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<hr>
-<h3 id="3-下拉列表"><a href="#3-下拉列表" class="headerlink" title="3.下拉列表"></a>3.下拉列表</h3><p>本步骤我们将会学习下拉列表应如何使用</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-  &lt;style&gt;
-    * &#123;
-      padding: 0;
-      margin: 0;
-    &#125;
-
-    li &#123;
-      list-style: none;
-    &#125;
-
-    .nav &#123;
-      width: 100%;
-      height: 70px;
-      background-color: pink;
-    &#125;
-
-    .middle &#123;
-      width: 60%;
-      height: 70px;
-      background-color: red;
-      margin: 0 auto;
-    &#125;
-
-    .middle:hover .nav_list &#123;
-      opacity: 1;
-      z-index: 1;
-    &#125;
-
-    .nav_list &#123;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      opacity: 0;
-      width: 1659px;
-      height: 300px;
-      z-index: -1;
-      background: rgba(0, 0, 0, .3);
-    &#125;
-
-    .nav_list ul &#123;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    &#125;
-
-    .nav_list ul&gt;li &#123;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 163px;
-      height: 300px;
-      border: 1px solid red;
-    &#125;
-
-    .nav_list ul&gt;li&gt;a &#123;
-      display: inline-block;
-      width: 100%;
-      height: 50px;
-      border: 1px purple solid;
-    &#125;
-
-    .footer &#123;
-      width: 100%;
-      height: 500px;
-      background-color: skyblue;
-    &#125;
-  &lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;div class=&quot;nav&quot;&gt;
-    &lt;div class=&quot;middle&quot;&gt;
-      &lt;div class=&quot;nav_list&quot;&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot;&gt;游戏下载&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;新手指引&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;资料库&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;云顶之奕&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;攻略中心&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;开发者基地&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;海克斯战利品库&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;英雄联盟宇宙&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot;&gt;点券充值&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;道聚城&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;周边商城&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;网吧特权&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;电竞小说&lt;/a&gt;
-
-
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot;&gt;视频中心&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;官方微博&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;LOL组队专区&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;作者入驻计划&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;英雄联盟素材库&lt;/a&gt;
-
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot;&gt;LPL职业联赛&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;德玛西亚杯&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;LPL全明星周末&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;全球总决赛&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;季中冠军赛&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;城市英雄争霸赛&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;全国高校联赛&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;云顶之奕公开赛&lt;/a&gt;
-
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href=&quot;#&quot;&gt;图标自助领取&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;转区系统&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;封号查询&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;账号注销&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;信誉分系统&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;服务器状态查询&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;秩序殿堂&lt;/a&gt;
-            &lt;a href=&quot;#&quot;&gt;峡谷之巅&lt;/a&gt;
-
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
-<hr>
-<h3 id="4-轮播图"><a href="#4-轮播图" class="headerlink" title="4.轮播图"></a>4.轮播图</h3><p>本步骤我们将会学习如何使用轮播图</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;en&quot;&gt;
-
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;滚动式轮播图&lt;/title&gt;
-    &lt;style&gt;
-      * &#123;
-        margin: 0;
-        padding: 0;
-      &#125;
-
-      #wrap &#123;
-        width: 820px;
-        height: 380px;
-      &#125;
-
-      #wrap .picBox &#123;
-        width: 820px;
-        height: 340px;
-        overflow: hidden;
-        cursor: pointer;
-      &#125;
-
-      #picBox &#123;
-        width: 4100px;
-        height: 340px;
-        transition: all 0.5s;
-      &#125;
-
-      #picBox li &#123;
-        float: left;
-        list-style: none;
-      &#125;
-
-      #picBox li img &#123;
-        display: block;
-      &#125;
-
-      #picNav li &#123;
-        width: 164px;
-        height: 40px;
-        float: left;
-        list-style: none;
-        line-height: 40px;
-        text-align: center;
-        font-size: 14px;
-        background-color: #e3e2e2;
-      &#125;
-
-      #picNav .active &#123;
-        border-bottom: 2px #cea861 solid;
-        background-color: white;
-        height: 38px;
-        color: #ab8e66;
-      &#125;
-    &lt;/style&gt;
-  &lt;/head&gt;
-
-  &lt;body&gt;
-    &lt;div id=&quot;wrap&quot;&gt;
-      &lt;div class=&quot;picBox&quot;&gt;
-        &lt;ul id=&quot;picBox&quot;&gt;
-          &lt;li&gt;&lt;img src=&quot;/img/lol/p1.webp&quot;
-              alt=&quot;&quot;&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;img src=&quot;/img/lol/p2.webp&quot;
-              alt=&quot;&quot;&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;img src=&quot;/img/lol/p3.webp&quot;
-              alt=&quot;&quot;&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;img src=&quot;/img/lol/p4.webp&quot;
-              alt=&quot;&quot;&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;img src=&quot;/img/lol/p5.webp&quot;
-              alt=&quot;&quot;&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;picNav&quot;&gt;
-        &lt;ul id=&quot;picNav&quot;&gt;
-          &lt;li class=&quot;active&quot;&gt;EDG冠军战队皮肤&lt;/li&gt;
-          &lt;li&gt;西部影魔2022&lt;/li&gt;
-          &lt;li&gt;520MSI赛程&lt;/li&gt;
-          &lt;li&gt;EDG冠军荣耀宝箱&lt;/li&gt;
-          &lt;li&gt;520情人节周边&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;script&gt;
-      // 找到对应的picNav标签
-      var picNav = document.getElementById(&quot;picNav&quot;)
-      // 找到这个标签里的所有li标签
-      var picNavLis = picNav.getElementsByTagName(&quot;li&quot;)
-      var index = 0 //图面默认的索引值
-      function change() &#123;     //创建一个定时器,让轮播图完成自动轮播
-        console.log(1)
-        if (index == 4) &#123;
-          index = 0
-        &#125; else &#123;
-          index++
-        &#125;
-        //先将pinNavLis中的所有li标签通过for循环全部清空样式
-        for (var n = 0; n &lt; picNavLis.length; n++) &#123;
-          picNavLis[n].className = &quot;&quot;
-        &#125;
-        // 在当前自动轮播到[this.index]的轮播图上添加一个active的样式
-        picNavLis[this.index].className = &quot;active&quot;
-        // 在用来展示图片的位置添加一个marginLeft的样式,用当前li的索引值this.index*(-820)+&quot;px&quot;用来完成 录播图的切换
-        picBox.style.marginLeft = -this.index * 820 + &quot;px&quot;
-      &#125;
-      var t = setInterval(change, 2500)   //调用定时器,来完成轮播都每隔2.5s就自动轮播一次
-      // for循环给每个li标签分发事件
-      for (var n = 0; n &lt; picNavLis.length; n++) &#123;
-        // 给每个li分发一个属性 鼠标进入li后再控制台返回
-        // console.log(this.index)控制台返回这个li是第几个li
-        picNavLis[n].index = n
-        picNavLis[n].onmouseenter = function () &#123;
-          // 排他思想:先将所有样式清空
-          for (var j = 0; j &lt; picNavLis.length; j++) &#123;
-            picNavLis[j].className = &quot;&quot;
-          &#125;
-          // 鼠标进入那个li就给那个li分发样式
-          picNavLis[this.index].className = &quot;active&quot;
-          // 鼠标移入任意标签输出当前标签的索引值
-          console.log(this.index)
-          // 设置指定标签的样式.style        为了移动轮播图到指定位置,让当前li的索引值*820+&quot;px&quot;
-          picBox.style.marginLeft = -this.index * 820 + &quot;px&quot;
-          index = this.index// 让图片和自动轮播对应上,让index等与当前鼠标进入的那个li标签
-        &#125;
-      &#125;
-      // 找到这个放置轮播图的大div
-      var wrap = document.getElementById(&quot;wrap&quot;)
-      // 当鼠标进入这个轮播图时,终止自动轮播
-      wrap.onmouseenter = function () &#123;
-        clearInterval(t)
-      &#125;
-      // 当鼠标离开轮播图时候,开始自动轮播
-      wrap.onmouseleave = function () &#123;
-        t = setInterval(change, 2500)
-      &#125;
-    &lt;/script&gt;
-  &lt;/body&gt;
-
-  &lt;/html&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
-<hr>
-
             
         </div>
     </div>
@@ -634,162 +246,6 @@
         
     </div>
     <a href="/2024/04/06/lol/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/03/25/mysql/">
-        <h2 class="post-title">mysql</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/3/25
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <span id="more"></span>
-<h1 id="mysql指令"><a href="#mysql指令" class="headerlink" title="mysql指令"></a>mysql指令</h1><hr>
-<h2 id="mysql的打开与停止"><a href="#mysql的打开与停止" class="headerlink" title="mysql的打开与停止"></a>mysql的打开与停止</h2><h3 id="mysql的打开："><a href="#mysql的打开：" class="headerlink" title="mysql的打开："></a>mysql的打开：</h3><pre><code>net start mysql80
-</code></pre>
-<h3 id="mysql的停止："><a href="#mysql的停止：" class="headerlink" title="mysql的停止："></a>mysql的停止：</h3><pre><code>net stop mysql80
-</code></pre>
-<h3 id="mysql客户端的链接："><a href="#mysql客户端的链接：" class="headerlink" title="mysql客户端的链接："></a>mysql客户端的链接：</h3><pre><code>mysql [-h 127.0.0.1] [-p 3306] -u root -p
-</code></pre>
-<h2 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h2><h3 id="SQL通用语法"><a href="#SQL通用语法" class="headerlink" title="SQL通用语法"></a>SQL通用语法</h3><ol>
-<li>SQL语句可以单行或者多行书写，以分号结尾</li>
-<li>SQL语句可以使用空格&#x2F;缩进来增强语句的可读性</li>
-<li>MySQL数据库的SQL语句不区分大小写，关键词建议用大写</li>
-<li>注释：<ul>
-<li>单行注释：–注释内容 或者 #注释内容</li>
-<li>多行注释： &#x2F;* 注释内容 *&#x2F;</li>
-</ul>
-</li>
-</ol>
-<h3 id="SQL分类"><a href="#SQL分类" class="headerlink" title="SQL分类"></a>SQL分类</h3><ol>
-<li>DDL：数据定义语言，用于定义数据库对象（数据库，表，字段）</li>
-<li>DML：数据操作语言，用于对数据库表中的数据进行增删该</li>
-<li>DQL：数据查询语言，用于查询数据库中表的结构</li>
-<li>DCL：数据控制语言，用于创建数据库用书，控制数据库的访问权限</li>
-</ol>
-<h3 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h3><h4 id="库操作"><a href="#库操作" class="headerlink" title="库操作"></a>库操作</h4><p>查询所有数据库：</p>
-<pre><code>show databases;
-</code></pre>
-<p>查询当前数据库：</p>
-<pre><code>select database();
-</code></pre>
-<p>创建：</p>
-<pre><code>create database [if not exists] 数据库名 [default charset 字符集] [collate 排序规则];
-</code></pre>
-<p>删除：</p>
-<pre><code>c [if exists]数据库名；
-</code></pre>
-<p>使用：</p>
-<pre><code>use 数据库名；
-</code></pre>
-<h4 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h4><h5 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h5><p>查询当前数据库所有表:</p>
-<pre><code>show tables;
-</code></pre>
-<p>查询表结构:</p>
-<pre><code>desc 表名;
-</code></pre>
-<p>查询指定表的建表语句：</p>
-<pre><code>show create table 表名;
-</code></pre>
-<h5 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h5><pre><code>create table 表名(
-    字段1 字段1类型[comment 字段1注释],
-    字段2 字段2类型[comment 字段2注释],
-    字段3 字段3类型[comment 字段3注释],
-    ......
-    字段n 字段n类型[comment 字段n注释]
-)[comment 表注释];
-</code></pre>
-<h5 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h5><p>案例：在itheima库中创建tb_user的表，包含id，name，age,gender,并查询该表结构。</p>
-<pre><code>create datebase itheima;
-use itheima;
-create table tb_user(
-    id int comment &#39;编号&#39;,
-    name varchar(50) comment &#39;姓名&#39;,
-    age int comment &#39;年龄&#39;,
-    gender varchar(1) comment &#39;性别&#39;
-)comment &#39;用户表&#39;;
-desc tb_user;
-</code></pre>
-<h5 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h5><p>添加字段</p>
-<pre><code>alter table 表名 add 字段名 类型（长度） [comment 注释];
-</code></pre>
-<p>案例：为emp表添加一个新的字段“昵称”为nickname，类型为varchar（20）</p>
-<pre><code>desc cmp;
-alter table emp add nickname varchar(20) comment &quot;昵称&quot;;
-</code></pre>
-<p>修改数据类型</p>
-<pre><code>alter table 表名 modify 字段名 新数据类型；
-</code></pre>
-<p>修改字段名和字段类型</p>
-<pre><code>alter table 表名 change 旧字段名 新字段名 数据类型 [comment 注释];
-</code></pre>
-<p>案例：将emp中的nickname改为username，类型为varchar(30)</p>
-<pre><code>alter table emp change nickname username varchar(30) comment &quot;昵称&quot;;
-</code></pre>
-<p>删除字段</p>
-<pre><code>alter 表名 drop 字段名;
-</code></pre>
-<p>案例：将emp表中的username删除</p>
-<pre><code>alter emp drop username;
-</code></pre>
-<p>修改表名:</p>
-<pre><code>alter table 表名 rename to 新表名;
-</code></pre>
-<p>案例：将emp表名该为employee</p>
-<pre><code>alter username rename to employee;
-</code></pre>
-<p>删除表:</p>
-<pre><code>drop table [if exists] 表名;
-</code></pre>
-<p>删除指定表，并重新建立该表：</p>
-<pre><code>    truncate table 表名;
-</code></pre>
-<p>案例：将表tb_user删除</p>
-<pre><code>drop table if exists tb_user;
-</code></pre>
-<h3 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h3><h4 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h4><h5 id="给指定字段添加数据："><a href="#给指定字段添加数据：" class="headerlink" title="给指定字段添加数据："></a>给指定字段添加数据：</h5><pre><code>insert into 表名(字段名1，字段名2，...)values(值1，值2);
-</code></pre>
-<p>案例：</p>
-<pre><code>insert into employee(id, workno, name, gender, age, idcard, entrydate) values(&quot;1&quot;,&quot;1&quot;,&quot;黑马&quot;,&quot;男&quot;,18,&quot;123456789012345671&quot;,&quot;2024-3-28&quot;);
-</code></pre>
-<h5 id="给指定字段添加数据：-1"><a href="#给指定字段添加数据：-1" class="headerlink" title="给指定字段添加数据："></a>给指定字段添加数据：</h5><pre><code>insert into 表名 values(值1，值2);
-</code></pre>
-<p>案例：</p>
-<pre><code>insert into employee values (2,&quot;2&quot;,&quot;马黑&quot;,&quot;女&quot;,81,&quot;012345678901234562&quot;,&quot;2024-3-28&quot;);
-</code></pre>
-<h5 id="批量添加数据"><a href="#批量添加数据" class="headerlink" title="批量添加数据"></a>批量添加数据</h5><pre><code>insert into 表名(字段名1，字段名2,...) values(值1，值2，...),(值1，值2,....),(值1，值2，...);
-
-insert into 表名 values(值1，值2,....),(值1,值2,...),(值1,值2,...); 
-</code></pre>
-<p>案例：</p>
-<pre><code>insert into employee values (3,&quot;3&quot;,&quot;小黑马&quot;,&quot;男&quot;,8,&quot;012345678901234563&quot;,&quot;2024-3-28&quot;),(4,&quot;4&quot;,&quot;中黑马&quot;,&quot;男&quot;,18,&quot;012345678901234564&quot;,&quot;2024-3-28&quot;);
-</code></pre>
-<h4 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h4><pre><code>update 表名 set 字段1=值1,字段2=值2,....[where 条件];
-</code></pre>
-<p>案例：将编号为1的name修改城itheima：</p>
-<pre><code>update employee set name=&quot;itheima&quot; where id=1;
-</code></pre>
-<h3 id="DQL"><a href="#DQL" class="headerlink" title="DQL"></a>DQL</h3><h3 id="DCL"><a href="#DCL" class="headerlink" title="DCL"></a>DCL</h3>
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/03/25/mysql/" class="go-post">阅读全文</a>
 </div>
 
 
